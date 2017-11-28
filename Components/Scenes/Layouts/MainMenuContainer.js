@@ -17,8 +17,11 @@ class MainMenuContainer extends React.Component {
         layoutOrigin: [0.5, 0.5],
         transform: [{ translate: [0, 0, -5] }]
       }}>
-        <Title />
-        <Button />
+        <Title text={this.props.text} />
+        <Button
+          buttonText={this.props.buttonText}
+          updateScene={this.props.updateScene}
+          scene={this.props.scene} />
       </View>
     )
   }

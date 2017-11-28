@@ -15,7 +15,7 @@ class Title extends React.Component {
             textAlign: 'center',
             textAlignVertical: 'center'
           }}>
-          Outdoor Movie Theater
+          {this.props.text}
         </Text>
       </View>
     )
